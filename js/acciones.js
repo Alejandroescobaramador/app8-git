@@ -14,19 +14,20 @@
 	 
 	 function getPosition(){
 		 var options ={
-			 enableHighAccuracy  :true,
+			 enableHighAccuracy :true,
 			 maximumAge:3600000
-		 }
+		     }
 		 
 		 var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError,options);
 		 
 		  function onSuccess(Position){
 			  
-		     alert('Latitude:'   +Position.coords.latitude         +'/n'+
-			  'Longitude:'       +Position.coords.longitude        +'/n');
+		     alert('Latitude:'   +Position.coords.latitude         +'\n'+
+			  'Longitude:'       +Position.coords.longitude        +'\n');
 		  };
 		  
 		   function onError(error){
-			   alert('code:'  +error.code  +'/n'+ 'message:'+ error.message+ '/n');
+			   alert('code:'  +error.code  +'\n'+ 'message:'+ error.message +'\n');
 		   }
 	 }
+	 
