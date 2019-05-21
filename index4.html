@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>app8 Geolocalizacion </title>
+<title>Ubicacion en el mapa de google</title>
 </head>
 <body>
 <!--Se determina la localizacion-->
@@ -24,7 +24,7 @@ if(navigator.geolocation){
 <script type="text/javascript">
    var x=document.getElementById("demo");
    function cargarmap(){
-	  navigator .geolocation.getCurrentPosition (showPosition,showError);
+	  navigator.geolocation.getCurrentPosition (showPosition,showError);
       function showPosition(position) 
 	  {
 		  lat=position.coords.latitude;
